@@ -16,7 +16,10 @@ public class Cliente {
     // Estos tendrán el mismo nombre en la base de datos
     private String nombre;
     private String apellido;
+
+
     private String correo;
+
     private Integer telefono;
 
     //Constructor vacío

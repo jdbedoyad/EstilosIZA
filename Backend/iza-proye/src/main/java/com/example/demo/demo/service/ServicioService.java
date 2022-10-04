@@ -1,7 +1,7 @@
 package com.example.demo.demo.service;
 
 import com.example.demo.demo.DTO.ServicioDto;
-import com.example.demo.demo.persistance.entities.Servivio;
+import com.example.demo.demo.persistance.entities.Servicio;
 import com.example.demo.demo.persistance.repository.IServicioRepository;
 import com.example.demo.demo.service.impl.IServicioService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -24,8 +24,8 @@ public class ServicioService implements IServicioService {
     ObjectMapper mapper;
 
     public void guardarServicio(ServicioDto servicioDto){
-        Servivio servivio = mapper.convertValue(servicioDto, Servivio.class);
-        servicioRepository.save(servivio);
+        Servicio servicio = mapper.convertValue(servicioDto, Servicio.class);
+        servicioRepository.save(servicio);
     }
 
 
@@ -37,7 +37,7 @@ public class ServicioService implements IServicioService {
     @Override
     public ServicioDto leerServicio(Long id) {
 // Opcional nos permite preguntar si el objeto es o no null
-        Optional<Servivio> servicio = servicioRepository.findById(id);
+        Optional<Servicio> servicio = servicioRepository.findById(id);
         ServicioDto servicioDto = null;
         if(servicio.isPresent())
             servicioDto = mapper.convertValue(servicio, ServicioDto.class);
@@ -57,12 +57,12 @@ public class ServicioService implements IServicioService {
     @Override
     public Set<ServicioDto> getTodos() {
         // Lista de servicios
-        List<Servivio> servicios = servicioRepository.findAll();
+        List<Servicio> servicios = servicioRepository.findAll();
         // Llenar otra lista
         Set<ServicioDto> serviciosDto = new HashSet<>();
 
         // Recorrer la lista e ir cambiando la clase a un dto y agregarla a set
-        for (Servivio servicio : servicios) {
+        for (Servicio servicio : servicios) {
             serviciosDto.add(mapper.convertValue(servicio, ServicioDto.class));
         }
         return serviciosDto;

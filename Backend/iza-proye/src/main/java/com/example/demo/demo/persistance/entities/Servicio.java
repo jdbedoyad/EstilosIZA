@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "servicios")
-public class Servivio {
+public class Servicio {
 
     // Atributos
     @Id

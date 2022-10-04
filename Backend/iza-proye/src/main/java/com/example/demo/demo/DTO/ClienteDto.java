@@ -6,7 +6,7 @@ public class ClienteDto {
     private Long id;
     private String nombre;
     private String apellido;
-    private String email;
+    private String correo;
     private Integer telefono;
 
 
@@ -36,12 +36,12 @@ public class ClienteDto {
         this.apellido = apellido;
     }
 
-    public String getEmail() {
-        return email;
+    public String getCorreo() {
+        return correo;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
     public Integer getTelefono() {

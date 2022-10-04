@@ -20,7 +20,7 @@ public class Cita {
     // Relación muchos a uno: Muchos citas pueden tener un mismo servicio
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     @JoinColumn(name = "servicio_id", nullable = false)
-    private Servivio servivio;
+    private Servicio servivio;
 
 
     // El cliente puede querer varios servicios, así que van en una lista
@@ -31,13 +31,13 @@ public class Cita {
     }
 
     // Constructor sin id
-    public Cita(Cliente cliente, Servivio servivio) {
+    public Cita(Cliente cliente, Servicio servivio) {
         this.cliente = cliente;
         this.servivio = servivio;
     }
 
     //Constructor con id
-    public Cita(Long id, Cliente cliente, Servivio servivio) {
+    public Cita(Long id, Cliente cliente, Servicio servivio) {
         this.id = id;
         this.cliente = cliente;
         this.servivio = servivio;
@@ -62,11 +62,11 @@ public class Cita {
         this.cliente = cliente;
     }
 
-    public Servivio getServivio() {
+    public Servicio getServivio() {
         return servivio;
     }
 
-    public void setServivio(Servivio servivio) {
+    public void setServivio(Servicio servivio) {
         this.servivio = servivio;
     }
 }
