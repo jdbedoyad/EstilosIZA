@@ -31,7 +31,7 @@ public class CitaServiceTest {
     public void crearCitaTest(){
 
         ClienteDto clienteDto = new ClienteDto();
-        clienteDto.setId(21L);
+        clienteDto.setId(22L);
         clienteDto.setNombre("Camila Andrea");
         clienteDto.setApellido("Jaramillo");
         clienteDto.setCorreo("jaramillo@gmail.com");
@@ -39,7 +39,7 @@ public class CitaServiceTest {
         ClienteDto clientePrueba = clienteService.crearCliente(clienteDto);
 
         ServicioDto servicioDto = new ServicioDto();
-        servicioDto.setId(13L);
+        servicioDto.setId(14L);
         servicioDto.setNombreServicio("Corte sencillo dama");
         servicioDto.setCosto(10000);
 
