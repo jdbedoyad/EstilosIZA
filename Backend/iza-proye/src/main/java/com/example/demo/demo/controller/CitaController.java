@@ -44,5 +44,4 @@ public class CitaController {
     public Collection<CitaDto> getTodosCitas(){
         return citaService.getTodos();
     }
-
 }

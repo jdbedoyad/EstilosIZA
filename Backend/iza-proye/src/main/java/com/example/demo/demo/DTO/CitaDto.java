@@ -1,24 +1,21 @@
 package com.example.demo.demo.DTO;
 
 
-import com.example.demo.demo.persistance.entities.Cliente;
-import com.example.demo.demo.persistance.entities.Servicio;
-
 public class CitaDto {
 
     //Atributos
     private Long id;
-    private Cliente cliente;
-    private Servicio servicio;
+    private ClienteDto cliente;
+    private ServicioDto servicio;
 
     // Getters & Setters
 
 
-    public Servicio getServicio() {
+    public ServicioDto getServicio() {
         return servicio;
     }
 
-    public void setServicio(Servicio servicio) {
+    public void setServicio(ServicioDto servicio) {
         this.servicio = servicio;
     }
 
@@ -30,11 +27,11 @@ public class CitaDto {
         this.id = id;
     }
 
-    public Cliente getCliente() {
+    public ClienteDto getCliente() {
         return cliente;
     }
 
-    public void setCliente(Cliente cliente) {
+    public void setCliente(ClienteDto cliente) {
         this.cliente = cliente;
     }
 }

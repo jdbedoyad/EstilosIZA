@@ -24,8 +24,9 @@ public class ClienteService  implements IClienteService {
     ObjectMapper mapper;
 
     @Override
-    public void crearCliente(ClienteDto clienteDto) {
+    public ClienteDto crearCliente(ClienteDto clienteDto) {
         guardarCliente(clienteDto);
+        return clienteDto;
     }
 
     @Override

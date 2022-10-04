@@ -6,7 +6,7 @@ import java.util.Set;
 
 public interface ICitaService {
 
-    void crearCita(CitaDto citaDto);
+    CitaDto crearCita(CitaDto citaDto);
     CitaDto leerCita (Long id);
     void modificarCita (CitaDto citaDto);
     void eliminarCita (Long id);

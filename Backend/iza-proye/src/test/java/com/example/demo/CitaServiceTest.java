@@ -4,9 +4,14 @@ import com.example.demo.demo.DTO.CitaDto;
 import com.example.demo.demo.DTO.ClienteDto;
 import com.example.demo.demo.DTO.ServicioDto;
 import com.example.demo.demo.service.impl.ICitaService;
+import com.example.demo.demo.service.impl.IClienteService;
+import com.example.demo.demo.service.impl.IServicioService;
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.Date;
 
 import static org.junit.Assert.assertTrue;
 
@@ -16,22 +21,36 @@ public class CitaServiceTest {
     @Autowired
     ICitaService citaService;
 
+    @Autowired
+    IClienteService clienteService;
+
+    @Autowired
+    IServicioService servicioService;
+
     @Test
     public void crearCitaTest(){
 
         ClienteDto clienteDto = new ClienteDto();
-        clienteDto.setNombre("Andres");
-        clienteDto.setApellido("Muñoz");
-        clienteDto.setCorreo("amu@gmail.com");
-        clienteDto.setTelefono(77754);
-
+        clienteDto.setId(21L);
+        clienteDto.setNombre("Camila Andrea");
+        clienteDto.setApellido("Jaramillo");
+        clienteDto.setCorreo("jaramillo@gmail.com");
+        clienteDto.setTelefono(777);
+        ClienteDto clientePrueba = clienteService.crearCliente(clienteDto);
 
         ServicioDto servicioDto = new ServicioDto();
-        servicioDto.setNombreServicio("Corte caballero");
-        servicioDto.setCosto(15000);
+        servicioDto.setId(13L);
+        servicioDto.setNombreServicio("Corte sencillo dama");
+        servicioDto.setCosto(10000);
 
+        ServicioDto servicioPrueba =servicioService.crearServicio(servicioDto);
 
-        CitaDto citaPrueba = citaService.leerCita(1L);
-        assertTrue(citaPrueba != null);
+        CitaDto cita = new CitaDto();
+
+        cita.setCliente(clientePrueba);
+        cita.setServicio(servicioPrueba);
+
+        CitaDto citaPrueba = citaService.crearCita(cita);
+        assertTrue (citaPrueba != null);
     }
 }

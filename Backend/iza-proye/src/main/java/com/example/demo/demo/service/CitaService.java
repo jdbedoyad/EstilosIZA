@@ -23,8 +23,9 @@ public class CitaService implements ICitaService {
     ObjectMapper mapper;
 
     @Override
-    public void crearCita(CitaDto citaDto) {
+    public CitaDto crearCita(CitaDto citaDto) {
         guardarCita(citaDto);
+        return citaDto;
     }
 
     public void guardarCita(CitaDto citaDto){

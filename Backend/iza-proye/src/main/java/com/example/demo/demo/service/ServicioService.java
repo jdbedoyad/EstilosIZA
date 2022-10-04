@@ -30,8 +30,9 @@ public class ServicioService implements IServicioService {
 
 
     @Override
-    public void crearServicio(ServicioDto servicioDto) {
+    public ServicioDto crearServicio(ServicioDto servicioDto) {
         guardarServicio(servicioDto);
+        return servicioDto;
     }
 
     @Override

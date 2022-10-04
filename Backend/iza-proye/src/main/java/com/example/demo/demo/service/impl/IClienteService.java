@@ -6,7 +6,7 @@ import java.util.Set;
 
 public interface IClienteService {
 
-    void crearCliente(ClienteDto clienteDto);
+    ClienteDto crearCliente(ClienteDto clienteDto);
     ClienteDto leerCliente (Long id);
     void modificarCliente (ClienteDto clienteDto);
     void eliminarCliente (Long id);
