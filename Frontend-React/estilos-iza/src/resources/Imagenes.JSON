@@ -1,43 +1,43 @@
 [
     {
         "id": "1",
-        "producto": {
-            "imagen" : "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b5830fdb-9073-478f-98b0-c3e681d67ba5/revolution-6-next-nature-zapatillas-de-running-asfalto-hbjW0p.png"
+        "servicio": {
+            "imagen" : "Frontend-React/estilos-iza/src/img/barba.jpeg"
         }
     },
     {
         "id": "2",
-        "producto": {
+        "servicio": {
             "imagen" : "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b5830fdb-9073-478f-98b0-c3e681d67ba5/revolution-6-next-nature-zapatillas-de-running-asfalto-hbjW0p.png"
         }
     },
     {
         "id": "3",
-        "producto": {
+        "servicio": {
             "imagen" : "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b5830fdb-9073-478f-98b0-c3e681d67ba5/revolution-6-next-nature-zapatillas-de-running-asfalto-hbjW0p.png"
         }
     },
     {
         "id": "4",
-        "producto": {
+        "servicio": {
             "imagen" : "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b5830fdb-9073-478f-98b0-c3e681d67ba5/revolution-6-next-nature-zapatillas-de-running-asfalto-hbjW0p.png"
         }
     },
     {
         "id": "5",
-        "producto": {
+        "servicio": {
             "imagen" : "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b5830fdb-9073-478f-98b0-c3e681d67ba5/revolution-6-next-nature-zapatillas-de-running-asfalto-hbjW0p.png"
         }
     },
     {
         "id": "6",
-        "producto": {
+        "servicio": {
             "imagen" : "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b5830fdb-9073-478f-98b0-c3e681d67ba5/revolution-6-next-nature-zapatillas-de-running-asfalto-hbjW0p.png"
         }
     },
     {
         "id": "7",
-        "producto": {
+        "servicio": {
             "imagen" : "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b5830fdb-9073-478f-98b0-c3e681d67ba5/revolution-6-next-nature-zapatillas-de-running-asfalto-hbjW0p.png"
         }
     }

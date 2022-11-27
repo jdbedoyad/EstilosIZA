@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { ContainerAll } from './Footer.Styles';
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <ContainerAll>
+      Footer
+
+    </ContainerAll>
   )
 }
 

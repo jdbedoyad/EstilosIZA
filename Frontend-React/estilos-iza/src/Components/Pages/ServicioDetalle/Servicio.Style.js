@@ -38,6 +38,7 @@ export const Card = styled.div`
         background-color:  red;
         transition: background 1.4s 0s ease;
         color: white;
+        cursor: pointer;
        }
 
 `

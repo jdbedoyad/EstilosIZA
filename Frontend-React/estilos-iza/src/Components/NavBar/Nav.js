@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 function NavB() {
   return (
@@ -8,9 +9,8 @@ function NavB() {
       <Navbar bg="dark" variant="dark">
         <Container>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#features">Servicios</Nav.Link>
-            <Nav.Link href="#pricing">Reserva</Nav.Link>
+            <Link to={'/'}> Inicio &nbsp; &nbsp; &nbsp;</Link>
+            <Link to={'/reserva'}> Reserva </Link>
           </Nav>
         </Container>
       </Navbar>
